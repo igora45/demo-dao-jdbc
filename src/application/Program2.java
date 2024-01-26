@@ -27,7 +27,6 @@ public class Program2 {
         DepartmentDao.insert(newDepartment);
         System.out.println("Inserted! New id = " + newDepartment.getId());
 
-
         System.out.println("\n===== TEST 4: department update =====");
         Department dep1 = DepartmentDao.findById(2);
         dep1.setName("Programming");
@@ -39,7 +38,6 @@ public class Program2 {
         int number = sc.nextInt();
         DepartmentDao.deleteById(number);
         System.out.println("Delete completed!");
-
 
     }
 }
